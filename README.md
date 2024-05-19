@@ -1,0 +1,2 @@
+# lotto
+a lotto game
