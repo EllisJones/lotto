@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Play Lotto</title>
+  </head>
+  <body>
+    <h1>Play Lotto</h1>
+    <div class="main">
+      <h2>Choose numbers or lucky dip?</h2>
+      <p>Pick 6 numbers or choose lucky dip for a random selection</p>
+      <button onclick="luckyDip()" class="btn selectionButton">
+        Lucky Dip
+      </button>
+
+      <button class="btn selectionButton" id="chooseNumbers">
+        Choose Numbers
+      </button>
+      <div class="numbers">
+        <div class="ball" id="ball1"></div>
+        <div class="ball" id="ball2"></div>
+        <div class="ball" id="ball3"></div>
+        <div class="ball" id="ball4"></div>
+        <div class="ball" id="ball5"></div>
+        <div class="ball" id="ball6"></div>
+        <button onclick="resetNumbers()" class="btn selectionButton">
+          clear
+        </button>
+      </div>
+      <br />
+      <button onclick="play()" class="btn play">Play</button>
+    </div>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <b>Select Your Numbers</b>
+        <div class="numbers">
+          <button class="selectBall" id="select1">1</button>
+          <button class="selectBall" id="select2">2</button>
+          <button class="selectBall" id="select3">3</button>
+          <button class="selectBall" id="select4">4</button>
+          <button class="selectBall" id="select5">5</button>
+          <button class="selectBall" id="select6">6</button>
+          <button class="selectBall" id="select7">7</button>
+          <button class="selectBall" id="select8">8</button>
+          <button class="selectBall" id="select9">9</button>
+          <button class="selectBall" id="select10">10</button>
+          <button class="selectBall" id="select11">11</button>
+          <button class="selectBall" id="select12">12</button>
+          <button class="selectBall" id="select13">13</button>
+          <button class="selectBall" id="select14">14</button>
+          <button class="selectBall" id="select15">15</button>
+          <button class="selectBall" id="select16">16</button>
+          <button class="selectBall" id="select17">17</button>
+          <button class="selectBall" id="select18">18</button>
+          <button class="selectBall" id="select19">19</button>
+          <button class="selectBall" id="select20">20</button>
+          <button class="selectBall" id="select21">21</button>
+          <button class="selectBall" id="select22">22</button>
+          <button class="selectBall" id="select23">23</button>
+          <button class="selectBall" id="select24">24</button>
+          <button class="selectBall" id="select25">25</button>
+          <button class="selectBall" id="select26">26</button>
+          <button class="selectBall" id="select27">27</button>
+          <button class="selectBall" id="select28">28</button>
+          <button class="selectBall" id="select29">29</button>
+          <button class="selectBall" id="select30">30</button>
+          <button class="selectBall" id="select31">31</button>
+          <button class="selectBall" id="select32">32</button>
+          <button class="selectBall" id="select33">33</button>
+          <button class="selectBall" id="select34">34</button>
+          <button class="selectBall" id="select35">35</button>
+          <button class="selectBall" id="select36">36</button>
+          <button class="selectBall" id="select37">37</button>
+          <button class="selectBall" id="select38">38</button>
+          <button class="selectBall" id="select39">39</button>
+          <button class="selectBall" id="select40">40</button>
+          <button class="selectBall" id="select41">41</button>
+          <button class="selectBall" id="select42">42</button>
+          <button class="selectBall" id="select43">43</button>
+          <button class="selectBall" id="select44">44</button>
+          <button class="selectBall" id="select45">45</button>
+          <button class="selectBall" id="select46">46</button>
+          <button class="selectBall" id="select47">47</button>
+          <button class="selectBall" id="select48">48</button>
+          <button class="selectBall" id="select49">49</button>
+          <button class="selectBall" id="select50">50</button>
+        </div>
+        <button class="btn" id="confirm">Confirm Selection</button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="script.js"></script>
