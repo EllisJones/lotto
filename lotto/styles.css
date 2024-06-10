@@ -30,6 +30,7 @@ p {
 .btn:hover {
   background-color: #19268e;
   color: aliceblue;
+  transition: 0.3s;
 }
 .play {
   background-color: #19268e;
@@ -38,6 +39,7 @@ p {
 .play:hover {
   background-color: aliceblue;
   color: #19268e;
+  transition: 0.3s;
 }
 .main {
   background-color: aliceblue;
@@ -51,9 +53,12 @@ p {
 }
 .numbers {
   display: flex;
+  flex-wrap: wrap;
 }
 .ball {
   border: 3px solid #19268e;
+  color: #19268e;
+  font-weight: bold;
   margin-right: 10px;
   padding: 20px;
   border-radius: 50%;
@@ -62,4 +67,63 @@ p {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  text-align: center;
+}
+.selectBall {
+  color: #19268e;
+  border: 3px solid #19268e;
+  font-weight: bolder;
+  font-size: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+  padding: 20px;
+}
+.selectBall:hover {
+  background-color: #19268e;
+  color: aliceblue;
+  transition: 0.3s;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  color: #19268e;
+  font-size: 32px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
