@@ -47,6 +47,17 @@ p {
   font-weight: 500;
   margin: 10%;
   margin-top: 5%;
+  margin-bottom: 3%;
+  border-radius: 15px;
+  padding: 2%;
+  text-align: left;
+}
+.prizes {
+  background-color: aliceblue;
+  color: #19268e;
+  font-weight: 500;
+  margin: 10%;
+  margin-top: 0%;
   border-radius: 15px;
   padding: 2%;
   text-align: left;
@@ -72,6 +83,7 @@ p {
 .selectBall {
   color: #19268e;
   border: 3px solid #19268e;
+  background-color: aliceblue;
   font-weight: bolder;
   font-size: 16px;
   text-align: center;
@@ -89,6 +101,11 @@ p {
   color: aliceblue;
   transition: 0.3s;
 }
+.selected {
+  background-color: #19268e;
+  color: aliceblue;
+}
+
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
@@ -103,24 +120,20 @@ p {
   color: #19268e;
   font-size: 32px;
 }
-
-/* Modal Content */
 .modal-content {
-  background-color: #fefefe;
+  background-color: aliceblue;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
+  border-radius: 15px;
   width: 80%;
 }
-
-/* The Close Button */
 .close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
-
 .close:hover,
 .close:focus {
   color: black;
